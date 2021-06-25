@@ -7,3 +7,8 @@
 * Database: MySql
 ## Database Schema:
   <img src="https://github.com/se-prashant/Calendar-Web-App/blob/master/db_Schema.png" alt="img"> </img>
+### Run App 
+  * server -> npm install 
+  * node server.js
+  * client -> home.html
+
