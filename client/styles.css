@@ -1,0 +1,103 @@
+body{
+    background-color:#1B9CE2 ;
+}
+
+p{
+  text-align: left;
+  padding-bottom: 1px;
+}
+
+#input{
+  background-color:pink;
+  width: 100px;
+  height: 50px;
+
+}
+
+.app{
+  text-align: center;
+  position: relative;
+}
+
+.calendar{
+  display: grid;
+  grid-template-columns:repeat(8  ,1fr);
+  position: absolute;
+}
+
+
+.date{
+  background-color: white;
+  /* width: 100px; */
+  height: 100px; 
+}
+
+.add{
+  background-color: teal;
+}
+
+
+.day{
+  background-color:pink;
+  height: 50px;
+}
+
+
+.deleteButton{
+  margin: 0;
+  background-color: red;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.dateVal{
+margin-bottom: 0;
+}
+
+.teacher{
+ background-color: white;
+  border: 1px solid black;
+  grid-column-start:2;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.view-options{
+  text-align: right;
+  background-color: white;
+  border: 1px solid black;
+  grid-column-start:6;
+  grid-column-end: 9;
+  grid-row-start: 1;
+  grid-row-end: 2;
+} 
+.inputField { 
+  background-color:white;
+  border: 1px solid black;
+  grid-row-start:1;
+  grid-row-end:8;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  opacity: 0;
+}
+label{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color:#1B9CE2;
+}
+input{
+  width: 80%;
+  margin: 1rem 0 3rem 0;
+}
+
+.taskName{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.postButton{
+background-color: #1B9CE2;
+margin: 0.5rem 0;
+padding: 25% 25%;
+font-size: 1rem;
+}

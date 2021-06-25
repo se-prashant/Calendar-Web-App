@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calendar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    
+    <div class="app">
+        <h1> Calendar</h1>
+        <h2>July,2021</h2>
+        <div class='calendar'>
+            <div class="teacher">
+                <form>
+                    <label for="teachers"><strong>Select Teachers &emsp;</strong></label>
+                    <select id="input" name="viewType" class="selectTeachers" onchange="selectTeacher(this)">
+                        <option value="-">--</option>
+                        <option value="1">Teacher A</option>
+                        <option value="2">Teacher B</option>
+                        <option value="3">Teacher C</option>
+                        <option value="4">Teacher D</option>
+                        <option value="5">Teacher E</option>
+                    </select>
+
+                </form>
+            </div>
+            <div class="view-options">
+                <form>
+                    <label for="view-options"><strong>Select View &emsp;</Select></strong></label>         
+                    <select id="input" class="selectView" name="viewType">
+                        <option value="Month">Month</option>
+                        <option value="Days">Days</option>
+                        <option value="Weeks">Weeks</option>
+                    </select>
+
+                </form>
+            </div>
+           
+            <button class="day" disabled>Sun</button>
+            <button class="day" disabled>Mon</button>
+            <button class="day" disabled>Tue</button>
+            <button class="day" disabled>Wed</button>
+            <button class="day" disabled>Thu</button>
+            <button class="day" disabled>Fri</button>
+            <button class="day" disabled>Sat</button>
+            
+            <script>  
+                for(var _i =1;_i<=31;_i+=1){
+                   document.write('<button class="date">'+_i.toString()+'</button>');
+                }
+            </script>
+          
+
+            <button class="date" disabled>1</button>
+            <button class="date" disabled>2</button>
+            <button class="date" disabled>3</button>
+
+            <button class="date add" onclick="addData()">+</button>
+            <form class="inputField" onsubmit='return refresh("")'>
+                <h4 style="color: #1B9CE2"> Enter Details Below:⬇️</h4>
+                <label for="task">Enter Task:</label>
+                <input type="text" name="task" value="" required="required"><br>
+                <label for="date">Enter Date:</label>
+                <input type="date" name="date" min="2021-07-01" max="2021-07-31" required="required"><br>
+                <label for="date">Enter Time:</label>
+                <input type="time" name="time" required="required">
+                <button type="submit" class="postButton">submit</button>
+            </form>
+
+
+
+
+        </div>
+    </div>
+
+    <script src="index.js" charset="utf-8">
+    </script>
+</body>
+
+</html>
