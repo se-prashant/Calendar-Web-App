@@ -6,4 +6,4 @@
 * Backend : Express, Nodejs
 * Database: MySql
 ## Database Schema:
-  <img src=""> </img>
+  <img src="https://github.com/se-prashant/Calendar-Web-App/blob/master/db_Schema.png" alt="img"> </img>
